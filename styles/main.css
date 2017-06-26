@@ -42,9 +42,9 @@ img {
 
 .pic-container
 {
-	background-color: red;
-	border: 2px dashed black;
-	height: 500px;
+	position: relative;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .intro 
@@ -52,7 +52,7 @@ img {
 	height: 100%;
 	width: 100%;
 	margin: auto;
-	background: url(https://static.pexels.com/photos/248159/pexels-photo-248159.jpeg) no-repeat 50% 50%;
+	background: url(../img/bg.jpg) no-repeat 50% 50%;
 	background-size: cover;
 	display: table;
 	top: 0;
@@ -161,21 +161,35 @@ nav:hover ul
 /*---End Nav --*/
 .left-col 
 {
-	width: 60%;
+	width:60%;
 	float: left;
 	margin: 4% 0 4% 4%;
 }
 
+.sideServ
+{
+    width: 26%;
+}
 .sidebar 
 {
-	width: 26%;
 	float: left;
 	margin: 4%;
 	position: relative;
 	top: 75px;
 	overflow: hidden;
 }
+.self
+{
+  
+   width: 250px;
+   height: 500px; 
+}
 
+.self img
+{
+   
+    width: 400px;
+}
 .one-third-port 
 {
 /*	width: 29.333333%;*/
@@ -202,8 +216,9 @@ nav:hover ul
 
 .break 
 {
-	display: none;
+/*	display: none;*/
 }
+
 
 .clearfix 
 {
@@ -240,58 +255,194 @@ footer.second p {
 	text-align: center;
 	padding: 5%;
 }
-@media screen and (max-width: 768px) {
-	#menu-icon {
+
+/*--------------------------------------Media Queries-------------------------------*/
+
+@media screen and (max-width: 350px)
+{
+   .one-third-port 
+    {
+		width: 100% !important;
+		margin: 0 auto;
+        margin-top: -110px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    .self
+    {
+        width: 100%;
+    }
+    
+    .one-third-port img
+    {
+        width: 100%;
+    }
+    
+    .pic-container
+    {
+        position: relative;
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    
+   .pic-container
+    {
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+    .one-third-port img
+    {
+        width: 90%;
+    } 
+    
+}
+
+@media screen and (max-width: 768px) 
+{
+	#menu-icon 
+    {
 		margin: 26px 0 0 26px;
 	}
-	nav ul, nav:active ul {
+    
+    .sideServ
+    {
+        width: 100% !important;
+    }
+    
+	nav ul, nav:active ul 
+    {
 		padding: 8px 0;
 		left: 23px;
 		top: 34px;
 		width: 50%;
 	}
-	.inner {
+    
+	.inner 
+    {
 		font-size: 120%;
 	}
 	
+    .contact-me
+    {
+       margin-top: 100px;
+    }
+    
 	.sidecontent
 	{
 		top: 0px;
 		
 	}
-	.content h1 {
+    
+	.content h1 
+    {
 		font-size: 180%;
 	}
-	p {
+    
+	p 
+    {
 		font-size: 120%;
 	}
-	h2 {
+    
+	h2 
+    {
 		font-size: 160%;
 	}
-	.left-col {
-		width: 96%;
+    
+	.left-col 
+    {
+		width: 90%;
 		margin: 0 0 3% 0;
 		padding: 0 2%;
 	}
-	.sidebar {
+    
+	.sidebar 
+    {
 		width: 96%;
 		margin: 0 auto;
 	}
-	img {
+    
+	img 
+    {
 		padding: 2%;
 	}
-	.one-third-port {
+    
+    .self
+    {
+        margin: 0 auto !important;
+        float:right !important;
+        width: 100%;
+        position: relative;
+        top: 5px !important;
+    }
+    
+    .self img
+    {
+        width: 100% !important;
+    }
+    
+	.one-third-port 
+    {
 		width: 96% !important;
 		margin: 0 auto;
 		padding: 0;
 	}
-	.break {
+    
+	.break 
+    {
 		display: block;
 	}
-	.parallax {
+    
+	.parallax 
+    {
 		display: none;
 	}
-	.social i {
+    
+	.social i 
+    {
 		font-size: 170%;
 	}
+}
+
+@media screen and (max-width: 920px)
+{
+   .left-col {
+		width: 90% !important;
+		margin: 0 0 3% 0;
+		padding: 0 2%;
+	} 
+    
+    .self
+    {
+        text-align: center;
+        width: 100% !important; 
+        position: relative;
+        top: -50px;
+        
+    }
+    .sideServ
+    {
+        margin: 0 auto !important;
+    }
+    
+}
+
+@media screen and (max-width: 1532px) 
+{
+    img 
+    {
+		width: 100%;
+	}
+    
+	.one-third-port 
+    {
+		width: 30%;
+		margin: 0 auto;
+		padding: 0;
+        
+	}
+        
 }
