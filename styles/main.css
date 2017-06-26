@@ -95,7 +95,7 @@ h1
 	line-height: 1.6;
 	padding: 10px;
 }
-/*--- Start Nav --*/
+/*---------------------- Start Nav ---------------*/
 nav 
 {
 	float: left;
@@ -141,6 +141,7 @@ nav li
 	width: 100%;
 	padding: 8px 0 10px 7px;
 	margin: 0;
+    
 }
 
 nav:hover ul 
