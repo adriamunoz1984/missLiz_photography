@@ -24,28 +24,10 @@ p
 	color: #2C2C2C;
 	font-size: 140%;
 	line-height: 180%;
-	text-align: justify;
+/*	text-align: justify;*/
 	font-weight: 300;
 }
 
-.one-third-port
-{
-	width: 400px;
-	height: 400px;
-	overflow: hidden;
-}
-
-img {
-	text-align: center;
-/*	width: 400px;	*/
-}
-
-.pic-container
-{
-	position: relative;
-    width: 90%;
-    margin: 0 auto;
-}
 
 .intro 
 {
@@ -159,6 +141,8 @@ nav:hover ul
 	margin: 50px 0 0 50px;
 }
 /*---End Nav --*/
+
+
 .left-col 
 {
 	width:60%;
@@ -169,7 +153,9 @@ nav:hover ul
 .sideServ
 {
     width: 26%;
+    text-align: center;
 }
+
 .sidebar 
 {
 	float: left;
@@ -178,33 +164,46 @@ nav:hover ul
 	top: 75px;
 	overflow: hidden;
 }
+
 .self
 {
-  
-   width: 250px;
+   width: 25%;
    height: 500px; 
 }
 
 .self img
 {
    
-    width: 400px;
+    width: 100%;
 }
 .one-third-port 
 {
-/*	width: 29.333333%;*/
-	padding: 2%;
-	float: left;
+    display: inline-block;
+   
 }
 
+.one-third-port  img
+{
+     border-radius: 25px;
+    width: 100%;
+}
 .one-third-port img:hover 
 {
 	opacity: .6;
 }
 
+
+.pic-container
+{
+	position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
 .contact p 
 {
-	text-align: center;
+	text-align: center !important;
 	letter-spacing: 5px;
 }
 
@@ -425,24 +424,24 @@ footer.second p {
     }
     .sideServ
     {
-        margin: 0 auto !important;
+      width: 100%;
+         position: relative;
+        top: -25px;
     }
     
-}
-
-@media screen and (max-width: 1532px) 
-{
-    img 
+     .sideServ .services
     {
-		width: 100%;
-	}
+        width: 20%;
+        margin: 0 auto;
+       
+    }
     
-	.one-third-port 
+  
+    
+    .pic-container
     {
-		width: 30%;
-		margin: 0 auto;
-		padding: 0;
-        
-	}
-        
+       width: 100% !important; 
+    }
+
+    
 }
