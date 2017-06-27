@@ -27,8 +27,16 @@ p
 /*	text-align: justify;*/
 	font-weight: 300;
 }
+.services p
+{
+   margin: 0 auto;
+   width: 200px; 
+}
 
-
+.services
+{
+    text-align: center;
+}
 .intro 
 {
 	height: 100%;
@@ -159,7 +167,6 @@ nav:hover ul
 .sidebar 
 {
 	float: left;
-	margin: 4%;
 	position: relative;
 	top: 75px;
 	overflow: hidden;
@@ -179,7 +186,8 @@ nav:hover ul
 .one-third-port 
 {
     display: inline-block;
-   
+    position: relative;
+  
 }
 
 .one-third-port  img
@@ -200,7 +208,10 @@ nav:hover ul
     margin: 0 auto;
 }
 
-
+.pic-align
+{
+  text-align: center;  
+}
 .contact p 
 {
 	text-align: center !important;
@@ -350,34 +361,46 @@ footer.second p {
     {
 		font-size: 160%;
 	}
+
     
 	.left-col 
     {
-		width: 90%;
+		width: 95% !important;
 		margin: 0 0 3% 0;
-		padding: 0 2%;
+		
 	}
     
-	.sidebar 
+    .left-col p
     {
-		width: 96%;
-		margin: 0 auto;
-	}
+       text-align: center; 
+    }
     
+
+    .pic-align
+    {
+      text-align:inherit;
+    }
+
+    
+/*
 	img 
     {
 		padding: 2%;
 	}
+*/
     
     .self
     {
         margin: 0 auto !important;
-        float:right !important;
         width: 100%;
         position: relative;
         top: 5px !important;
     }
     
+    .pic-align
+    {
+        text-align: center !important;
+    }
     .self img
     {
         width: 100% !important;
@@ -409,7 +432,7 @@ footer.second p {
 @media screen and (max-width: 920px)
 {
    .left-col {
-		width: 90% !important;
+		width: 90%;
 		margin: 0 0 3% 0;
 		padding: 0 2%;
 	} 
@@ -431,7 +454,7 @@ footer.second p {
     
      .sideServ .services
     {
-        width: 20%;
+       
         margin: 0 auto;
        
     }
